@@ -158,10 +158,10 @@ def loop():
 		#print(x)
 
 		cv2.circle(frame, center, 10, (0, 255, 0), -1)
-		cv2.putText(frame, offset ,center, font, 1,(255,255,255),2,cv2.LINE_AA)
+		cv2.putText(frame, offset ,center, font, 0.5,(255,255,255),1,cv2.LINE_AA)
 		cv2.line(frame, (int(scen_x),int(scen_y)), center, (0, 255, 0),5)
-		cv2.putText(frame, velocity ,(20,40), font, 1,(0,0,255),2,cv2.LINE_AA)
-		cv2.putText(frame, accel ,(20,85), font, 1,(0,0,255),2,cv2.LINE_AA)
+		cv2.putText(frame, velocity ,(20,40), font, 0.5,(0,0,255),1,cv2.LINE_AA)
+		cv2.putText(frame, accel ,(20,65), font, 0.5 ,(0,0,255),1,cv2.LINE_AA)
 		
 
 		#cv2.imshow('thresh', result)

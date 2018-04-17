@@ -123,7 +123,7 @@ void sweepang(int x, int opt, int l_pos, int sweep, int vel)
   diff = abs(l_pos - x);
   
   stat_set = map(v_abs,300,2000, 1, 2);
-  off_set = map(x_abs, 2, 370,0.1,7);
+  off_set = map(x_abs, 2, 200,0.1,5);
   
   //off_set = 1;
   
