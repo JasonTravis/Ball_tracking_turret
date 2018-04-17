@@ -20,7 +20,7 @@ def loop():
 	#Camera Variables 
 
 	camera = PiCamera()
-	camera.resolution = (640, 480)
+	camera.resolution = (320, 240)
 	camera.vflip = True 
 	camera.framerate = 32
 
@@ -34,12 +34,12 @@ def loop():
 	camera.awb_mode = 'off'
 	camera.awb_gains = g
 
-	rawCapture = PiRGBArray(camera, size=(640, 480))
+	rawCapture = PiRGBArray(camera, size=(320, 240))
 
 	font = cv2.FONT_HERSHEY_SIMPLEX
 
-	scen_x = 640/2
-	scen_y = 480/2
+	scen_x = 320/2
+	scen_y = 240/2
 
 	ser = serial.Serial(
 

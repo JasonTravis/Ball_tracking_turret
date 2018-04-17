@@ -52,7 +52,7 @@ void loop() {
        command = "";
 
        servo_x.write(ang_x);
-       delay(15);
+       //delay(15);
        servo_y.write(ang_y);
        delay(15);
     }
@@ -122,9 +122,10 @@ void sweepang(int x, int opt, int l_pos, int sweep, int vel)
   x_abs = abs(x);
   diff = abs(l_pos - x);
   
-  stat_set = map(v_abs,300` ,2000, 1, 2);
-  //off_set = map(diff,0,100,1,10);
-  off_set = 1;
+  stat_set = map(v_abs,300,2000, 1, 2);
+  off_set = map(x_abs, 2, 370,0.1,7);
+  
+  //off_set = 1;
   
   if ( x > 10 )
   {
