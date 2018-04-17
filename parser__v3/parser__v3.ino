@@ -38,6 +38,8 @@ void loop() {
     {
       //parsing string to find x and y offset
        parseCommand(command);
+       
+       Serial.flush();
 
       //calculationg sweep angle for x
        sweepang(pos_x,0, l_pos_x, sweep_x, vel_x);
